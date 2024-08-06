@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bank.bank.DatabaseController">
+    <children>
+        <AnchorPane layoutX="-3.0" prefHeight="578.0" prefWidth="170.0" style="-fx-background-color: #28252e;">
+            <children>
+                <Button fx:id="addButton" layoutX="16.0" layoutY="432.0" mnemonicParsing="false" onAction="#addUsers" prefHeight="26.0" prefWidth="62.0" style="-fx-background-color: green;" text="ADD" />
+                <Button fx:id="updateButton" layoutX="16.0" layoutY="487.0" mnemonicParsing="false" onAction="#updateData" prefHeight="26.0" prefWidth="62.0" style="-fx-background-color: yellow;" text="UPDATE" />
+                <Button fx:id="deleteButton" layoutX="16.0" layoutY="538.0" mnemonicParsing="false" onAction="#deleteData" prefHeight="26.0" prefWidth="62.0" style="-fx-background-color: red;" text="DELETE" />
+                <TextField fx:id="txt_email" layoutX="8.0" layoutY="60.0" prefHeight="26.0" prefWidth="81.0" promptText="Email" />
+                <TextField fx:id="txt_name" layoutX="8.0" layoutY="27.0" prefHeight="26.0" prefWidth="81.0" promptText="Name" />
+                <TextField fx:id="txt_phoneNum" layoutX="8.0" layoutY="93.0" prefHeight="26.0" prefWidth="81.0" promptText="PhoneNum" />
+                <TextField fx:id="txt_address" layoutX="9.0" layoutY="127.0" prefHeight="26.0" prefWidth="81.0" promptText="Address" />
+                <TextField fx:id="txt_password" layoutX="9.0" layoutY="201.0" prefHeight="26.0" prefWidth="81.0" promptText="Password" />
+                <TextField fx:id="txt_cardNum" layoutX="9.0" layoutY="163.0" prefHeight="26.0" prefWidth="81.0" promptText="CardNum" />
+                <TextField fx:id="txt_membership" layoutX="9.0" layoutY="236.0" prefHeight="26.0" prefWidth="81.0" promptText="MembershipType" />
+                <TextField fx:id="txt_Balance" layoutX="8.0" layoutY="271.0" prefHeight="26.0" prefWidth="81.0" promptText="Balance" />
+                <TextField fx:id="txt_id" layoutX="8.0" layoutY="-1.0" prefHeight="26.0" prefWidth="82.0" promptText="ID" />
+            </children>
+        </AnchorPane>
+        <TableView fx:id="accountsTable" layoutX="170.0" onMouseClicked="#selectSelection" prefHeight="578.0" prefWidth="778.0">
+            <columns>
+                <TableColumn fx:id="col_id" prefWidth="77.0" text="ID" />
+                <TableColumn fx:id="col_name" prefWidth="75.0" text="Name" />
+                <TableColumn fx:id="col_email" prefWidth="97.0" text="Email" />
+                <TableColumn fx:id="col_phoneNum" prefWidth="103.0" text="PhoneNum" />
+                <TableColumn fx:id="col_address" prefWidth="83.0" text="Address" />
+                <TableColumn fx:id="col_cardNum" prefWidth="102.0" text="CardNum" />
+                <TableColumn fx:id="col_password" prefWidth="76.0" text="Password" />
+                <TableColumn fx:id="col_membership" prefWidth="79.0" text="Membership" />
+                <TableColumn fx:id="col_balance" prefWidth="85.0" text="Balance" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

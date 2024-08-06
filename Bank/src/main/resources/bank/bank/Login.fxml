@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="465.0" style="-fx-background-color: #ffffcc;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bank.bank.LoginController">
+   <children>
+      <TextField id="AccNumTxt" fx:id="AccNumberTxt" layoutX="255.0" layoutY="185.0" />
+      <Label id="AccNumLabel" layoutX="62.0" layoutY="185.0" text="ID">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label id="PasswordLabel" layoutX="62.0" layoutY="253.0" text="Password">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button id="LoginButton" fx:id="LoginButton" layoutX="152.0" layoutY="300.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="161.0" style="-fx-background-color: #3973ac;" text="Login">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button id="ExitButton" fx:id="ExitButton" layoutX="290.0" layoutY="480.0" mnemonicParsing="false" onAction="#Exit" prefHeight="44.0" prefWidth="161.0" style="-fx-background-color: #ff8566;" text="Exit">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button id="RegisterButton" fx:id="RegisterButton" layoutX="153.0" layoutY="386.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="161.0" text="Register">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="BankImg" fitHeight="150.0" fitWidth="161.0" layoutX="158.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Assets/BankIcon.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="PasswordTxt" layoutX="255.0" layoutY="256.0" />
+      <Button id="RegisterButton" fx:id="DBbutton" layoutX="14.0" layoutY="480.0" mnemonicParsing="false" onAction="#DatabaseButton" prefHeight="44.0" prefWidth="161.0" text="Database">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
